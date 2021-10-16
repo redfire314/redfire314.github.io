@@ -182,6 +182,7 @@ body {
 }
 
 .servico:hover {
+    cursor: default;
     border-color: var(--color-font-sec);
     -webkit-transition: border-color var(--transition-duration);
     -o-transition: border-color var(--transition-duration);
