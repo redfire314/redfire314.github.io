@@ -77,7 +77,6 @@ input {
 }
 
 .contact-container input {
-    width: 256px;
     margin-bottom: 8px;
     padding: 4px;
 }
@@ -149,6 +148,14 @@ input {
     h1 {
         text-align: center;
     }
+
+    .contact-container input {
+        width: 256px;
+    }
+
+    #about > div:first-child {
+        overflow: hidden;
+    }
 }
 
 /* > notebook+ */
@@ -178,8 +185,16 @@ input {
         display: flex;
     }
 
-    #about img {
-        width: 50%;
+    #about > div:first-child {
+        min-width: 50%;
+        height: 512px;
+    }
+    
+    #about > div:first-child img {
+        width: 100%;
+        max-width: 480px;
+        display: block;
+        margin: auto;
     }
 
     #about > div {
@@ -188,5 +203,10 @@ input {
 
     #about h1 {
         margin: 0;
+    }
+
+    .contact-container input {
+        width: 100%;
+        max-width: 512px;
     }
 }
