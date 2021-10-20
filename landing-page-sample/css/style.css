@@ -83,7 +83,8 @@ input {
 
 .contact-container input[name] {
     border: 1px solid transparent;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid white;
+    border-radius: 4px;
 }
 
 .contact-container input[name]:focus,
@@ -92,13 +93,18 @@ input {
 }
 
 .contact-container input[type='Button'] {
+    color: white;
     background-color: transparent;
     border: 2px solid white;
     border-radius: 4px;
+    transition: all 200ms;
 }
 
 .contact-container input[type='Button']:hover {
     cursor: pointer;
+    color: #ffd700;
+    background-color: white;
+    transition: all 200ms;
 }
 
 /* Products */
