@@ -14,17 +14,6 @@
     --color-font-sec: #81D6E3;
 }
 
-/* Fonts */
-@font-face {
-    font-family: 'NotoSans-Regular';
-    src: url('../fonts/NotoSans-Regular.woff');
-}
-
-@font-face {
-    font-family: 'Roboto-Regular';
-    src: url('../fonts/Roboto-Regular.woff');
-}
-
 /* Generic */
 .container {
     max-width: var(--max-width);
@@ -35,7 +24,7 @@ h1,
 h3 {
     margin: 0;
     margin-bottom: 16px;
-    font-family: 'NotoSans-Regular';
+    font-family: 'Noto Sans', sans-serif;
     color: var(--color-font-sec);
     text-align: center;
 }
@@ -47,7 +36,7 @@ h1 {
 
 p,
 a {
-    font-family: 'Roboto-Regular';
+    font-family: 'Roboto', sans-serif;
     color: var(--color-font-main);
 }
 
