@@ -131,10 +131,12 @@ body {
 }
 
 /* ABOUT */
+/*
 #sobre {
     min-height: 50vh;
     padding-top: 24px;
 }
+*/
 
 /* SERVICES */
 #servicos h1 {
@@ -278,6 +280,20 @@ footer {
     margin: 16px;
     color: var(--color-font-main);
     text-align: center;
+}
+
+/* IMAGE ANIMATION */
+#servicos img[data-src],
+#portfolio img[data-src] {
+    opacity: 0;
+    transform: scale(0);
+}
+
+#servicos img[src],
+#portfolio img[src] {
+    opacity: 1;
+    transform: scale(1);
+    transition: .3 ease-in-out;
 }
 
 /* Media Query  - mobile */
