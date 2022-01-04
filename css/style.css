@@ -282,20 +282,6 @@ footer {
     text-align: center;
 }
 
-/* IMAGE ANIMATION */
-#servicos img[data-src],
-#portfolio img[data-src] {
-    opacity: 0;
-    transform: scale(0);
-}
-
-#servicos img[src],
-#portfolio img[src] {
-    opacity: 1;
-    transform: scale(1);
-    transition: .3 ease-in-out;
-}
-
 /* Media Query  - mobile */
 @media (min-width: 320px) and (max-width: 767px) {
     header {
