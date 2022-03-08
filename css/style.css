@@ -200,8 +200,20 @@ footer ul a:hover {
 
 /* RESPONSIVO */
 @media (max-width: 767px) {
+    #home h2 {
+        margin-top: 0;
+    }
+
+    .bg-main {
+        height: calc(80vh + 80px);
+    }
+
+    nav.z-depth-3.pin-top {
+        width: 100vw;
+    }
+
     .carousel {
-        margin-top: 64px;
+        margin-top: 48px;
         height: 256px;
     }
 
