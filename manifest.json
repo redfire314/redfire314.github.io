@@ -1,0 +1,16 @@
+{
+    "short_name": "Leandro Freelancer",
+    "name": "Leandro Freelancer - Desenvolvedor Web",
+    "icons": [
+        {
+            "src": "/images/logo-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "scope": "/",
+    "start_url": "/index.html",
+    "background_color": "#fff",
+    "theme_color": "#fff",
+    "display": "standalone"
+}

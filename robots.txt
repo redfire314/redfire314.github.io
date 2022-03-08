@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://redfire314.github.io/sitemap.xml
+Sitemap: https://leandrofreelancer.com.br//sitemap.xml

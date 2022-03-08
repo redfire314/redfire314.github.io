@@ -1,4 +1,15 @@
-document.querySelector('#hamburger-menu-container').addEventListener('click', () => {
-    document.querySelector('#hamburger-menu').classList.toggle('open')
-    document.querySelector('.nav-menu').classList.toggle('open')
-})
+$(() => {
+    $('.sidenav').sidenav();
+    $('.pin-top').pushpin({
+        top: 32
+    });
+    $('.dropdown-trigger').dropdown();
+    $('.carousel').carousel({
+        dist: -50
+    });
+    $('.materialboxed').materialbox();
+
+    // lazy loads elements with default selector as '.lozad'
+    const observer = lozad();
+    observer.observe();
+});
