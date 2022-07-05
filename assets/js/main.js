@@ -72,15 +72,23 @@ function toggleBurguerMenu() {
     burguerMenuElement.classList.toggle("active");
 }
 
-const swiper = new Swiper(".swiper", {
-    direction: "horizontal",
-    loop: true,
-    slidesPerView: window.outerWidth > 767 ? 5 : 1,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+// Wait for lib Swiper to load async
+const waitSwiper = setInterval(() => {
+    if (typeof Swiper === "undefined")
+        return
+    
+        new Swiper(".swiper", {
+            direction: "horizontal",
+            loop: true,
+            slidesPerView: window.outerWidth > 767 ? 5 : 1,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        clearInterval(waitSwiper)
+}, 500)
 
 document.querySelectorAll(".portfolio__img").forEach((element) => {
     element.addEventListener("click", () => {
